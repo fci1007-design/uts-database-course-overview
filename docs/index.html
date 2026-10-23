@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f5f5f7">
+  <meta name="description" content="從零認識資料庫。321606 Database 的完整課程概覽，透過分層大綱、關鍵 SQL 與生活例子，掌握四個單元的觀念。">
+  <title>Database｜從零認識資料庫</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='17' fill='%234658d9'/%3E%3Cellipse cx='32' cy='20' rx='17' ry='7' fill='white'/%3E%3Cpath d='M15 22v12c0 9 34 9 34 0V22M15 36v10c0 9 34 9 34 0V36' fill='none' stroke='white' stroke-width='4'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">跳到簡報內容</a>
+<button class="scrim" id="scrim" aria-label="關閉課程大綱" hidden></button>
+<aside class="sidebar" id="sidebar" aria-label="課程導覽">
+  <a class="brand" href="#slide-01" aria-label="回到課程全貌">
+    <span class="brand-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><ellipse cx="16" cy="8" rx="10" ry="4"/><path d="M6 9v7c0 5 20 5 20 0V9M6 18v6c0 5 20 5 20 0v-6"/></svg></span>
+    <span><strong>Database</strong><small>321606 · Session 6 2026</small></span>
+  </a>
+  <button class="icon-button drawer-close" id="closeMenu" aria-label="關閉課程大綱">×</button>
+  <div class="sidebar-heading"><span>課程大綱</span><button id="collapseAll" class="text-button">全部收合</button></div>
+  <label class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><input id="search" type="search" placeholder="搜尋章節或觀念" autocomplete="off" aria-label="搜尋章節或觀念"><kbd>/</kbd></label>
+  <nav id="outline" aria-label="分層課程大綱"></nav>
+  <p id="noResults" class="no-results" hidden>找不到符合的內容，試試「主鍵」或「SQL」。</p>
+  <div class="sidebar-bottom"><div><span>目前位置</span><strong id="sidebarPosition">01 / 15</strong></div><div class="progress-track"><span id="sidebarProgress"></span></div><p>從觀念開始，一次看懂一個主題。</p></div>
+</aside>
+<div class="workspace" id="workspace">
+  <header class="topbar">
+    <button class="icon-button menu-button" id="openMenu" aria-label="開啟課程大綱" aria-expanded="false" aria-controls="sidebar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    <div class="breadcrumb"><span>課程概覽</span><i aria-hidden="true">/</i><strong id="breadcrumb">開始認識</strong></div>
+    <div class="topbar-actions"><label class="text-size-control"><span>字級</span><select id="textSize" aria-label="閱讀字級"><option value="large">大字</option><option value="extra">特大字</option></select></label><div class="mode-switch" role="group" aria-label="閱讀方式"><button id="slidesMode" aria-pressed="true">簡報</button><button id="readMode" aria-pressed="false">全文</button></div><button class="icon-button focus-button" id="focusButton" aria-label="開啟專注模式" aria-pressed="false" title="專注模式"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M9 4v16"/></svg></button></div>
+  </header>
+  <main id="main" tabindex="-1"><div id="slides"></div></main>
+  <footer class="page-controls" id="pageControls"><button id="previous" class="page-button" aria-label="上一頁"><span aria-hidden="true">←</span><span class="button-label">上一頁</span></button><div class="page-center"><span id="pageNumber">01 / 15</span><div id="dots" class="page-dots" aria-hidden="true"></div><small id="nextTopic"></small></div><button id="next" class="page-button primary" aria-label="下一頁"><span class="button-label">下一頁</span><span aria-hidden="true">→</span></button></footer>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<noscript><div class="noscript">請啟用 JavaScript 觀看互動簡報，或直接閱讀原始 Markdown 課程概覽。</div></noscript>
+<script src="assets/course-data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
